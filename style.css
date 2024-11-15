@@ -1,0 +1,100 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header.profile {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header.profile h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header.profile p {
+    margin-top: 10px;
+}
+
+header.profile a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+header.profile a:hover {
+    text-decoration: underline;
+}
+
+/* Interests Section */
+#interests .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.keyword {
+    background-color: #e2e6ea;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.keyword:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Section headings */
+h2 {
+    margin: 30px 0 15px;
+    font-size: 1.8em;
+    color: #343a40;
+}
+
+/* Work experience and projects section */
+.job, .project, .volunteer-item {
+    margin-bottom: 20px;
+}
+
+.job h3, .project h3, .volunteer-item h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.job span, .project span {
+    font-size: 1em;
+    color: #777;
+}
+
+.project p, .job p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 30px;
+}
