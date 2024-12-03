@@ -14,6 +14,12 @@ body {
     background-color: #333;
     padding-top: 20px;
     z-index: 1000;
+    transition: transform 0.3s ease; /* Added transition for smooth slide-in */
+    transform: translateX(-100%); /* Initially hidden off-screen */
+}
+
+.side-menu.active {
+    transform: translateX(0); /* When active, bring the menu into view */
 }
 
 .side-menu ul {
@@ -44,36 +50,31 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
-    margin-top: 0;
+/* Menu Toggle Button */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 2000;
+    cursor: pointer;
 }
 
 /* Added responsiveness for smaller screens */
 @media (max-width: 768px) { /* Changed */
     .side-menu {
-        display: none; /* Initially hide the side menu */
+        display: block; /* Ensures side menu is block-level on smaller screens */
     }
 
-    .side-menu.active { /* Show side menu when active */
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 200px;
-        background-color: #333;
-        height: 100%;
-        z-index: 1000;
+    .main-content {
+        margin-left: 0; /* Full width for content */
+        padding-top: 50px; /* Space for the toggle button */
     }
 
-    .menu-toggle { /* Style for the toggle button */
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        z-index: 2000;
-        cursor: pointer;
+    .menu-toggle {
+        display: block; /* Make toggle button visible */
     }
 }
