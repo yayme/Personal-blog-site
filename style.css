@@ -48,6 +48,7 @@ body {
 .main-content {
     margin-left: 220px; /* Adjusted to match side menu width */
     padding: 20px;
+    transition: margin-left 0.3s ease; /* Smooth transition for the content area when menu is toggled */
 }
 
 /* Menu Toggle Button */
@@ -62,12 +63,11 @@ body {
     z-index: 2000;
     cursor: pointer;
 }
+
 /* Add glow effect to Font Awesome icons */
 .fas, .fab {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
     transition: text-shadow 0.3s ease-in-out;
-}
-.fas, .fab {
     font-family: 'Font Awesome 5 Free', sans-serif;
     font-weight: 900; /* Makes the icons bold */
     color: #000; /* Default icon color */
@@ -79,9 +79,10 @@ body {
 }
 
 /* Added responsiveness for smaller screens */
-@media (max-width: 768px) { /* Changed */
+@media (max-width: 768px) { 
     .side-menu {
-        display: block; /* Ensures side menu is block-level on smaller screens */
+        transform: translateX(0); /* Make the side menu visible on smaller screens */
+        width: 250px; /* Slightly larger width for better accessibility */
     }
 
     .main-content {
@@ -91,5 +92,10 @@ body {
 
     .menu-toggle {
         display: block; /* Make toggle button visible */
+    }
+
+    /* When menu is active, push content to the right */
+    .side-menu.active + .main-content {
+        margin-left: 250px; /* Adjust content margin for side menu visibility */
     }
 }
