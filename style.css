@@ -67,6 +67,11 @@ body {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
     transition: text-shadow 0.3s ease-in-out;
 }
+.fas, .fab {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900; /* Makes the icons bold */
+    color: #000; /* Default icon color */
+}
 
 /* On hover, increase the glow */
 .fas:hover, .fab:hover {
