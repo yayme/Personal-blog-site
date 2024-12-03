@@ -1,69 +1,201 @@
+/* General Reset */
 body {
-    display: flex;
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 /* Side Menu */
 .side-menu {
     width: 250px;
-    background-color: #333;
-    color: #fff;
-    height: 100vh;
+    height: 100%;
     position: fixed;
-    top: 0;
     left: 0;
+    top: 0;
+    background-color: #111;
+    color: white;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    transform: translateX(-100%); /* Hidden by default */
+    transition: transform 0.3s ease-in-out;
+}
+
+.side-menu.visible {
+    transform: translateX(0); /* Slide in when visible */
 }
 
 .side-menu ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-.side-menu ul li {
-    margin: 10px 0;
+.side-menu li {
+    padding: 15px;
+    text-align: left;
 }
 
-.side-menu ul li a {
+.side-menu a {
     text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
     display: block;
-    transition: background-color 0.3s ease;
 }
 
-.side-menu ul li a:hover {
+.side-menu a:hover {
     background-color: #575757;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #111;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none; /* Hidden on larger screens */
+}
+
+.menu-toggle:focus {
+    outline: none;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 250px; /* Offset for side menu */
+    margin-left: 250px; /* Leave space for the side menu */
     padding: 20px;
-    width: calc(100% - 250px);
-    background-color: #f9f9f9;
-    min-height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #444;
+/* Header/Profile Section */
+.profile {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
 }
 
-/* Other Styles */
-.container {
-    max-width: 800px;
-    margin: auto;
+.profile h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+.profile a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+
+/* Section Headings */
+.container h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Interests Section */
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .keyword {
-    display: inline-block;
-    background-color: #ddd;
-    margin: 5px;
+    background: #f39c12;
+    color: white;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9em;
+}
+
+/* Job and Project Sections */
+.job, .project {
+    margin-bottom: 20px;
+}
+
+.job h3, .project h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.job span, .project span {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+/* Volunteer and Awards Sections */
+.volunteer-item, .awards ul li {
+    margin-bottom: 10px;
+}
+
+/* Personal Interests Section */
+.personal-interests {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+
+    .side-menu {
+        position: fixed;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .side-menu.visible {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0; /* Remove margin for smaller screens */
+        padding: 10px;
+    }
+
+    .container h2 {
+        font-size: 1.5em;
+    }
+
+    .profile h1 {
+        font-size: 2em;
+    }
 }
