@@ -7,149 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Side Navigation Bar -->
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#volunteer">Volunteer & Other Experience</a></li>
+            <li><a href="#awards">Honors & Awards</a></li>
+            <li><a href="#personal-interests">Personal Interests</a></li>
+        </ul>
+    </nav>
 
-    <!-- Profile Section -->
-    <header class="profile">
-        <div class="container">
-            <h1>Adnan Sadik</h1>
-            <p>Daejeon, South Korea | <a href="mailto:adnansadik235@kaist.ac.kr">adnansadik235@kaist.ac.kr</a> | +82 01044087883</p>
-            <p><a href="https://github.com/yayme" target="_blank">GitHub</a></p>
-        </div>
-    </header>
-
-    <!-- Interests Section -->
-    <section id="interests" class="interests">
-        <div class="container">
-            <h2>Interests</h2>
-            <div class="keywords">
-                <span class="keyword">Mathematics</span>
-                <span class="keyword">Machine Learning</span>
-                <span class="keyword">Data Assimilation</span>
-                <span class="keyword">Quantitative Analysis</span>
-                <span class="keyword">Data Science</span>
-                <span class="keyword">AI Ethics</span>
-                <span class="keyword">Algorithmic Problem Solving</span>
-                <span class="keyword">Research</span>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Profile Section -->
+        <header id="profile" class="profile">
+            <div class="container">
+                <h1>Adnan Sadik</h1>
+                <p>Daejeon, South Korea | <a href="mailto:adnansadik235@kaist.ac.kr">adnansadik235@kaist.ac.kr</a> | +82 01044087883</p>
+                <p><a href="https://github.com/yayme" target="_blank">GitHub</a></p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Work Experience Section -->
-    <section class="work-experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-
-            <div class="job">
-                <h3>Undergraduate Researcher (Ongoing) <span>Aug 2024 - Present</span></h3>
-                <p>Under the project “ChatGPT Voices” by KAIST SW Center supervised by Prof. Alice Oh, and Prof. James Thorne.</p>
+        <!-- Interests Section -->
+        <section id="interests" class="interests">
+            <div class="container">
+                <h2>Interests</h2>
+                <div class="keywords">
+                    <span class="keyword">Mathematics</span>
+                    <span class="keyword">Machine Learning</span>
+                    <span class="keyword">Data Assimilation</span>
+                    <span class="keyword">Quantitative Analysis</span>
+                    <span class="keyword">Data Science</span>
+                    <span class="keyword">AI Ethics</span>
+                    <span class="keyword">Algorithmic Problem Solving</span>
+                    <span class="keyword">Research</span>
+                </div>
             </div>
+        </section>
 
-            <div class="job">
-                <h3>Individual Study <span>Machine Learning and Scientific Computing (MLSC) Lab, KAIST | Jul 2024 - Aug 2024</span></h3>
-                <p>Studied and gave presentation on data assimilation and how to use machine learning techniques to improve the accuracy of predictions and computational cost.</p>
-            </div>
-
-            <div class="job">
-                <h3>Research Intern <span>Data Strategy Lab, KAIST | Apr 2024 - May 2024</span></h3>
-                <p>Gained experience in research methods and review paper writing while studying AI biases from data and algorithms.</p>
-            </div>
-
-            <div class="job">
-                <h3>Grader at AoPS (Art of Problem Solving) <span>Remote | Aug 2023 - Jan 2024</span></h3>
-                <p>Graded and provided guidelines for improvement to high school students on courses related to mathematics, problem solving, and olympiads.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>File Organizer Application <a href="https://github.com/yayme/Desktop_file_organizer" target="_blank">GitHub</a></h3>
-                <p>This Python-based application automatically organizes files into categorized folders based on file type. It uses the Watchdog library to monitor file system events and organize files in real time. Currently, I am implementing content-based classification using machine learning to further automate the categorization process, allowing the system to categorize files based on their content.</p>
-                <p><strong>Languages & Libraries:</strong> Python, Watchdog, Pandas, Scikit-Learn</p>
-            </div>
-     <div class="project">
-  <h3>Data Assimilation Techniques 
-    <a href="https://github.com/yayme/Data-Assimilation" target="_blank">GitHub</a>
-  </h3>
-  <p>Implemented multiple data assimilation techniques, including Kalman Filtering, Extended Kalman Filtering (EKF), Particle Filtering, and Generalized Alpha-Beta Filtering for state estimation in dynamic systems.</p>
-  <p>Applied filters to real-world problems in navigation, control systems, object tracking, and time-series forecasting.</p>
-  <p>Developed modular Python code for each technique, enabling easy adaptation for various engineering and data analysis applications.</p>
-  <p><strong>Languages & Libraries:</strong> Python, Bayesian Filter</p>
-</div>
-
-          
-
-            <div class="project">
-                <h3>Movie Recommendation System <a href="https://github.com/yayme/Movie_Recommender" target="_blank">GitHub</a></h3>
-                <p>This project uses collaborative filtering and content-based filtering to recommend movies based on a user’s past ratings. I built an interactive recommendation engine using Python and various machine learning techniques, including matrix factorization. The system provides personalized movie recommendations based on IMDb data.</p>
-                <p><strong>Languages & Libraries:</strong> Python, Pandas, Scikit-Learn, Flask, IMDb API</p>
-            </div>
-
-            <div class="project">
-                <h3>Super (9x9) Tic-Tac-Toe <a href="https://github.com/yayme/super-tic-tac-toe-bot" target="_blank">GitHub</a></h3>
-                <p>A 9x9 Tic-Tac-Toe game with both single-player and two-player modes. The single-player mode features a bot that uses the minimax algorithm with alpha-beta pruning to play optimally. This project helped me sharpen my understanding of game theory and artificial intelligence algorithms.</p>
-                <p><strong>Languages & Libraries:</strong> Python, Numpy</p>
-            </div>
-
-            <div class="project">
-                <h3>Neural Network for MNIST Digit Classification <a href="https://github.com/yayme/MNIST-NeuralNetwork-NumPy" target="_blank">GitHub</a></h3>
-                <p>I developed a neural network from scratch for the classification of MNIST digits using only NumPy. The project uses backpropagation and gradient descent to train the network, and I achieved 99.1% accuracy on the test dataset. This helped me gain a deeper understanding of neural network architectures and optimization techniques.</p>
-                <p><strong>Languages & Libraries:</strong> Python, NumPy</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteer & Other Experience Section -->
-    <section class="volunteer">
-        <div class="container">
-            <h2>Volunteer & Other Experience</h2>
-            
-            <div class="volunteer-item">
-                <h3>A Taste of Mathematics (ATOM) <span>2021</span></h3>
-                <p>High school research correspondence program under the supervision of Ed Barbeau from the University of Toronto on transformational geometry.</p>
-            </div>
-
-            <div class="volunteer-item">
-                <h3>Country Representative, KAIST <span>Fall 2024</span></h3>
-            </div>
-
-            <div class="volunteer-item">
-                <h3>Notre Dame Math Club, Dhaka <span>Secretary | Jan 2021 - Dec 2022</span></h3>
-                <p>Assisted in organizing classes and competitions and supported junior students with queries.</p>
-            </div>
-
-            <div class="volunteer-item">
-                <h3>Kushtia Zilla School Math Club, Kushtia <span>Founding Member and Trainer | Feb 2018 - May 2020</span></h3>
-                <p>Founded the club and taught math to junior students, organizing various competitions.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Honors & Awards Section -->
-    <section class="awards">
-        <div class="container">
-            <h2>Awards</h2>
-            <ul>
-                <li>Bronze medal at the IMO 2020 and 2021</li>
-                <li>Bronze medal at the APMO 2021 and 2022</li>
-                <li>Bronze medal at the Bangladesh Olympiad in Informatics 2022</li>
-                <li>Competitive Programming: Candidate Master on Codeforces, 5 star on Codechef</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Personal Interests Section -->
-    <section class="personal-interests">
-        <div class="container">
-            <h2>Personal Interests</h2>
-            <p><strong>Chess:</strong> Advanced (Rated 1788 FIDE, Rated 2000+ on Chess.com)</p>
-            <p><strong>Movies:</strong> I love watching movies in my free time.</p>
-        </div>
-    </section>
+        <!-- Remaining Sections -->
+        <!-- Use your original sections here, ensuring each section has an ID matching the side-menu links -->
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="work-experience">
+            <!-- Original content -->
+        </section>
+        <section id="projects" class="projects">
+            <!-- Original content -->
+        </section>
+        <section id="volunteer" class="volunteer">
+            <!-- Original content -->
+        </section>
+        <section id="awards" class="awards">
+            <!-- Original content -->
+        </section>
+        <section id="personal-interests" class="personal-interests">
+            <!-- Original content -->
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Adnan Sadik. All Rights Reserved.</p>
@@ -158,3 +75,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
