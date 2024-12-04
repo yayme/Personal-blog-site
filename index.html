@@ -7,47 +7,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="contact-info">
-        <h1>Adnan Sadik</h1>
-        <p>Daejeon, South Korea</p>
-        <p>Email: <a href="mailto:adnansadik235@kaist.ac.kr">adnansadik235@kaist.ac.kr</a></p>
-        <p>Phone: +82 01044087883</p>
-        <p>GitHub: <a href="https://github.com/yayme">Github</a></p>
-    </div>
-
-    <section class="education">
-        <h2>Education</h2>
-        <p><strong>Korea Advanced Institute of Science and Technology (KAIST)</strong><br>
-        Bachelor’s Degree: Math, Computer Science (Double Major) <em>GPA: 3.86</em><br>
-        Aug 2023 - June 2027</p>
-        <p><strong>Courses:</strong> Mathematical Statistics, Machine Learning, Probability and Statistics, Statistical Decision Making</p>
-    </section>
-
-    <section class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming and Development:</strong> Proficient in Python (NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, Scipy), C++, C, JavaScript, and MATLAB.</li>
-            <li><strong>Mathematical Skills:</strong> Strong background in linear algebra, calculus, probability, and statistics.</li>
-            <li><strong>Teaching:</strong> Tutored 100+ high school students in mathematics and physics.</li>
-            <li><strong>Problem Solving:</strong> Proficient in tackling complex challenges in mathematics, physics, and computer science.</li>
-            <li><strong>Other Skills:</strong> LaTeX, HTML, CSS, Git, GitHub, Excel, SQL.</li>
-        </ul>
-    </section>
-
-    <section class="work-experience">
-        <h2>Work Experience</h2>
-
-        <div class="job">
-            <h3>Undergraduate Researcher</h3>
-            <p><strong>KAIST SW Center, Project: Chatgpt Voices</strong><br> Aug 2024 - Dec 2024</p>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h1>Adnan Sadik</h1>
+            <p>Daejeon, South Korea</p>
+            <p>Email: <a href="mailto:adnansadik235@kaist.ac.kr">adnansadik235@kaist.ac.kr</a></p>
+            <p>Phone: +82 01044087883</p>
+            <p>GitHub: <a href="https://github.com/yayme">Github</a></p>
+            <hr>
+            <h2>Skills</h2>
             <ul>
-                <li>Created a benchmark dataset for low-resource languages.</li>
-                <li>Collected and curated data from domains like syntax, literature, history, and law.</li>
-                <li>Evaluated LLM performance using the dataset to assess reasoning and language comprehension.</li>
+                <li>Programming Languages: Python, C++, JavaScript, MATLAB</li>
+                <li>Mathematical Skills: Probability, Statistics, Linear Algebra</li>
+                <li>Tools: Git, LaTeX, HTML, CSS, Excel, SQL</li>
+            </ul>
+            <hr>
+            <h2>Languages</h2>
+            <ul>
+                <li>English: Full Professional Proficiency</li>
+                <li>Bengali: Native</li>
+                <li>Korean: Intermediate</li>
             </ul>
         </div>
 
-        <div class="job">
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="education">
+                <h2>Education</h2>
+                <p><strong>Korea Advanced Institute of Science and Technology (KAIST)</strong><br>
+                Bachelor’s Degree: Math, Computer Science (Double Major) <em>GPA: 3.86</em><br>
+                Aug 2023 - June 2027</p>
+                <p><strong>Courses:</strong> Mathematical Statistics, Machine Learning, Probability and Statistics, Statistical Decision Making</p>
+            </section>
+
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>Undergraduate Researcher</h3>
+                    <p><strong>KAIST SW Center, Project: Chatgpt Voices</strong><br> Aug 2024 - Dec 2024</p>
+                    <ul>
+                        <li>Created a benchmark dataset for low-resource languages.</li>
+                        <li>Collected and curated data from domains like syntax, literature, history, and law.</li>
+                        <li>Evaluated LLM performance using the dataset to assess reasoning and language comprehension.</li>
+                    </ul>
+                </div>
+             
+                 <div class="job">
             <h3>Individual Study</h3>
             <p><strong>Machine Learning and Scientific Computing (MLSC) Lab, KAIST</strong><br> July 2024 - Aug 2024</p>
             <ul>
@@ -56,7 +62,7 @@
             </ul>
         </div>
 
-        <div class="job">
+                  <div class="job">
             <h3>Research Intern</h3>
             <p><strong>Data Strategy Lab, KAIST</strong><br> Apr 2024 - May 2024</p>
             <ul>
@@ -74,21 +80,21 @@
             </ul>
         </div>
     </section>
+   <!-- Add more jobs similarly -->
+            </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Data Assimilation Techniques</h3>
-            <p><strong>Python, Bayesian Filter</strong> <a href="https://github.com/yayme/Data-Assimilation">Github Link</a></p>
-            <ul>
-                <li>Implemented Kalman Filtering, Extended Kalman Filtering, Particle Filtering, and Alpha-Beta Filtering for state estimation.</li>
-                <li>Applied filters to real-world problems in navigation and object tracking.</li>
-                <li>Developed modular Python code for each technique, enabling easy adaptation for various applications.</li>
-            </ul>
-        </div>
-
-        <div class="project">
+            <section class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Data Assimilation Techniques</h3>
+                    <p><strong>Python, Bayesian Filter</strong> <a href="https://github.com/yayme/Data-Assimilation">Github Link</a></p>
+                    <ul>
+                        <li>Implemented Kalman Filtering, Extended Kalman Filtering, Particle Filtering, and Alpha-Beta Filtering for state estimation.</li>
+                        <li>Applied filters to real-world problems in navigation and object tracking.</li>
+                        <li>Developed modular Python code for each technique, enabling easy adaptation for various applications.</li>
+                    </ul>
+                </div>
+                  <div class="project">
             <h3>File Organizer Application</h3>
             <p><strong>Python, PyInstaller, Watchdog, Machine Learning</strong> <a href="https://github.com/yayme/Desktop_file_organizer">Github Link</a></p>
             <ul>
@@ -109,41 +115,30 @@
         </div>
     </section>
 
-    <section class="honors-awards">
-        <h2>Honors & Awards</h2>
-        <ul>
-            <li><strong>Bronze medal- IMO 2020, 2021</strong> International Mathematical Olympiad</li>
-            <li><strong>Bronze medal- APMO 2021, 2022</strong> Asian Pacific Mathematical Olympiad</li>
-            <li><strong>Bronze medal</strong> Bangladesh Olympiad in Informatics</li>
-            <li><strong>Competitive Programming:</strong> Candidate Master on Codeforces, 5-star on Codechef.</li>
-            <li><strong>Dean's list awardee</strong> Fall 2023</li>
-        </ul>
-    </section>
+                <!-- Add more projects similarly -->
+            </section>
 
-    <section class="volunteer-leadership">
-        <h2>Volunteer & Leadership Experience</h2>
-        <ul>
-            <li><strong>A Taste of Mathematics (ATOM)</strong> 2021 - High school research correspondence program under the supervision of Ed Barbeau from the University of Toronto.</li>
-            <li><strong>Country Representative, KAIST</strong> Fall 2024</li>
-            <li><strong>Math Clubs:</strong> Founding Member at Kushtia Zilla School Math Club (Feb 2018 - May 2020); Secretary at Notre Dame Math Club (Jan 2021 - Dec 2022).</li>
-        </ul>
-    </section>
+            <section class="honors-awards">
+                <h2>Honors & Awards</h2>
+                <ul>
+                    <li><strong>Bronze medal- IMO 2020, 2021</strong> International Mathematical Olympiad</li>
+                    <li><strong>Bronze medal- APMO 2021, 2022</strong> Asian Pacific Mathematical Olympiad</li>
+                    <li><strong>Bronze medal</strong> Bangladesh Olympiad in Informatics</li>
+                    <li><strong>Competitive Programming:</strong> Candidate Master on Codeforces, 5-star on Codechef.</li>
+                    <li><strong>Dean's list awardee</strong> Fall 2023</li>
+                </ul>
+            </section>
 
-    <section class="languages">
-        <h2>Languages</h2>
-        <ul>
-            <li><strong>English:</strong> Full Professional Proficiency, TOEFL score 106</li>
-            <li><strong>Bengali:</strong> Native</li>
-            <li><strong>Korean:</strong> Intermediate</li>
-        </ul>
-    </section>
-
-    <section class="other-interests">
-        <h2>Other Interests</h2>
-        <ul>
-            <li><strong>Chess:</strong> Advanced (Rated 1788 FIDE, Rated 2000+ on Chess.com)</li>
-        </ul>
-    </section>
+            <section class="volunteer-leadership">
+                <h2>Volunteer & Leadership Experience</h2>
+                <ul>
+                    <li><strong>A Taste of Mathematics (ATOM)</strong> 2021 - High school research correspondence program under the supervision of Ed Barbeau from the University of Toronto.</li>
+                    <li><strong>Country Representative, KAIST</strong> Fall 2024</li>
+                    <li><strong>Math Clubs:</strong> Founding Member at Kushtia Zilla School Math Club (Feb 2018 - May 2020); Secretary at Notre Dame Math Club (Jan 2021 - Dec 2022).</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
 
