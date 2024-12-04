@@ -1,3 +1,4 @@
+/* Basic Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,71 +6,104 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 3em;
+    color: #2c3e50;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.header a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.content {
     display: flex;
     width: 100%;
+    gap: 20px;
 }
 
 .sidebar {
     width: 250px;
-    background-color: #333;
-    color: white;
+    background-color: #34495e;
+    color: #fff;
     padding: 20px;
-    height: 100vh;
+    border-radius: 8px;
 }
 
 .sidebar h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-}
-
-.sidebar a {
-    color: #64b5f6;
-    text-decoration: none;
+    color: #ecf0f1;
 }
 
 .sidebar ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .sidebar ul li {
     margin: 10px 0;
 }
 
-.sidebar hr {
-    margin-top: 20px;
-    border: 1px solid #444;
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
 }
 
 .main-content {
     flex-grow: 1;
     padding: 20px;
-    background-color: white;
-}
-
-.main-content h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 .main-content h2 {
-    font-size: 1.8em;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.main-content h3 {
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.job, .project {
-    margin-bottom: 20px;
+ul {
+    list-style-type: none;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+ul li {
+    margin: 10px 0;
 }
 
 a {
@@ -81,12 +115,15 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .wrapper {
         flex-direction: column;
     }
 
     .sidebar {
         width: 100%;
-        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
     }
 }
