@@ -1,23 +1,14 @@
-// Smooth scrolling for side menu links
-document.querySelectorAll('.side-menu a').forEach(anchor => { // Changed
+// Smooth Scroll for Sidebar Links
+document.querySelectorAll('.sidebar a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+        e.preventDefault();
 
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop - 20, // Adjust offset to avoid overlap with the header
+            behavior: 'smooth'
+        });
     });
 });
-
-// Toggle menu visibility on smaller screens
-const menuToggle = document.querySelector('.menu-toggle'); // Changed
-const sideMenu = document.querySelector('.side-menu');
-
-menuToggle.addEventListener('click', () => {
-    sideMenu.classList.toggle('active'); // Toggle active class
-});
-
